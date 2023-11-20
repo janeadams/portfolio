@@ -1,0 +1,14 @@
+{
+    "experiences": [
+        {
+        "id": 1,
+        "title": "Software Engineer Intern",
+        "urlEnd": "experience-1",
+        "company": "Tech Company XYZ",
+        "year": "Summer 2021",
+        "description": "I worked as a software engineer intern at Tech Company XYZ during the summer of 2021. This experience provided me with valuable insights into...",
+        "projects": [1, 2]
+        }
+    ]
+}
+  

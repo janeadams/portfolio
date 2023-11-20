@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+main {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: #0366d6;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Define a container for the project/experience cards */
+.card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  gap: 20px; /* Add spacing between cards */
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for individual project/experience cards */
+.card {
+  color:#222;
+  width: calc(33.33% - 20px); /* Adjust card width based on the number of cards per row */
+  padding: 8px 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+
+  /* On larger screens, display 3 cards per row */
+  @media (min-width: 768px) {
+    width: calc(25% - 20px);
+  }
+
+  /* On even larger screens, display 4 cards per row */
+  @media (min-width: 1024px) {
+    width: calc(20% - 20px);
+  }
+
+  /* Hover effect */
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Additional styling for card content */
+.card h2 {
+  color:#222;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* CSS for the tag-list */
+.tag-list {
+  margin: 10px 10px 10px 0;
+}
+
+.tag-list strong {
+  display: block; /* Display "Tags:" on a new line */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tag-list ul {
+  list-style: none; /* Remove list bullets */
+  padding: 0;
+}
+
+.tag-list li {
+  display: inline-block; /* Display tags inline */
+  margin: 5px 5px 5px 0; /* Add space between tags */
+  background-color: #eee; /* Background color for tags */
+  padding: 3px 8px; /* Padding for tags */
+  border-radius: 5px; /* Rounded corners for tags */
+  font-size: 12px;
+}
+
+.tag-list label {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  margin: 10px 0 10px 10px;
+}
+
+.option-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }

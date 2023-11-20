@@ -1,0 +1,37 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project 1",
+        "urlEnd": "project-1",
+        "description": "A brief description of the first project goes here. You can provide details about the technologies used, your role, and the project's significance.",
+        "thumbnail": "images/project1-thumbnail.jpg",
+        "tags": ["Web Development", "React", "JavaScript"],
+        "year": 2022,
+        "institution": "Your University",
+        "experiences": [1],
+        "links": {
+          "demo": "https://example.com/project1-demo",
+          "github": "https://github.com/yourusername/project1"
+        },
+        "markdown": "../markdown/project1.md"
+      },
+      {
+        "id": 2,
+        "title": "Project 2",
+        "urlEnd": "project-2",
+        "description": "Another project description goes here.",
+        "thumbnail": "images/project2-thumbnail.jpg",
+        "tags": ["Machine Learning", "Python", "TensorFlow"],
+        "year": 2021,
+        "institution": "Your Company",
+        "experiences": [2],
+        "links": {
+          "demo": "https://example.com/project2-demo",
+          "github": "https://github.com/yourusername/project2"
+        },
+        "markdown": "../markdown/project2.md"
+      }
+    ]
+  }
+  
